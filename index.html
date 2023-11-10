@@ -1,36 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitacoras</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menú Responsive con Tabs</title>
 </head>
+
 <body>
-
     <header>
-        <h1>Evidencias</h1>
-    
-        <div class="pdf" style="display: flex; justify-content: center;">
-            <iframe src="https://drive.google.com/file/d/1kYLNrcw8Iv_zYNbmBQowgEJI7vb4UT0E/preview" width="1440" height="810" frameborder="0"></iframe>
+        <img id="showButton" src="./Img/WhiteLogos.png" alt="Botón Interactivo">
+        <div class="navbar">
+            <div class="menu" id="menu">
+                <a class="link" href="#">Evidencias bitacoras</a>
+                <p>Juan Camilo Misas Barrientos</p>
+            </div>
+            <div class="icon" id="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-
-        <div class="button">
-            <a href="https://drive.google.com/uc?export=download&id=1kYLNrcw8Iv_zYNbmBQowgEJI7vb4UT0E">Download</a>
-            <b class="top">click para descargar</b>
-            <b class="bottom">35,8 MB .pdf</b>
-          </div>
-
     </header>
-    
+
+
+
     <main>
 
+        <div id="photoContainer">
+            <img id="randomPhoto" src="./Img/WhiteLogos.png" alt="Foto" width="50" height="50">
+        </div>
+        <div class="limit-tabs">
+            <div class="tabs-section">
+                <div class="tabs">
+                    <a href="#content1" data-tab="content1" class="tab" id="tab1">Bitacora 1</a>
+                    <a href="#content2" data-tab="content2" class="tab" id="tab2">Bitacora 2</a>
+                    <a href="#content3" data-tab="content3" class="tab" id="tab3">Bitacora 3</a>
+                    <a href="#content4" data-tab="content4" class="tab" id="tab4">Bitacora 4</a>
+                    <a href="#content5" data-tab="content5" class="tab disable" id="tab5">Bitacora 5
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg></a>
+
+                    <a href="#content6" data-tab="content6" class="tab disable" id="tab6">Bitacora 6
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg></a>
+                    <a href="#content7" data-tab="content7" class="tab disable" id="tab7">Bitacora 7
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg></a>
+                    <a href="#content8" data-tab="content8" class="tab disable" id="tab8">Bitacora 8
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg></a>
+                    <a href="#content9" data-tab="content9" class="tab disable" id="tab9">Bitacora 9
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg></a>
+                    <a href="#content10" data-tab="content10" class="tab disable" id="tab10">Bitacora 10
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg></a>
+                    <a href="#content11" data-tab="content11" class="tab disable" id="tab11">Bitacora 11
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg>
+                    </a>
+                    <a href="#content12" data-tab="content12" class="tab disable" id="tab12">Bitacora 12
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="tabs-contents">
+
+                    <div class="tab-content" id="content1">
+                        <a
+                            href="https://drive.google.com/uc?export=download&id=1kYLNrcw8Iv_zYNbmBQowgEJI7vb4UT0E">Download</a>
+                        <iframe src="https://drive.google.com/file/d/1kYLNrcw8Iv_zYNbmBQowgEJI7vb4UT0E/preview"
+                            width="840" height="550" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab-content" id="content2">
+                        <a
+                            href="https://drive.google.com/uc?export=download&id=1kYLNrcw8Iv_zYNbmBQowgEJI7vb4UT0E">Download</a>
+                        <iframe src="https://drive.google.com/file/d/1kYLNrcw8Iv_zYNbmBQowgEJI7vb4UT0E/preview"
+                            width="840" height="550" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab-content" id="content3">Contenido de la pestaña 3</div>
+                    <div class="tab-content" id="content4">Contenido de la pestaña 4</div>
+                    <div class="tab-content" id="content5">Contenido de la pestaña 5</div>
+                    <div class="tab-content" id="content6">Contenido de la pestaña 6</div>
+                    <div class="tab-content" id="content7">Contenido de la pestaña 7</div>
+                    <div class="tab-content" id="content8">Contenido de la pestaña 8</div>
+                    <div class="tab-content" id="content9">Contenido de la pestaña 9</div>
+                    <div class="tab-content" id="content10">Contenido de la pestaña 10</div>
+                    <div class="tab-content" id="content11">Contenido de la pestaña 11</div>
+                    <div class="tab-content" id="content12">Contenido de la pestaña 12</div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-
-    </footer>
-
-<script src="./javascript.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

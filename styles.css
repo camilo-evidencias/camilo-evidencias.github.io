@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Montserrat-black;
+  src: url(./Fonts/Montserrat-bold.otf);
+}
+
+@font-face {
+  font-family: Montserrat-regular;
+  src: url(./Fonts/Montserrat-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat-black;
+  color: white;
+}
+
+body {
+  background-color: #2b2b2b;
+  background-image: url(./Img/wallpaper.jpg);
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  background-color: #0e0e0e9f;
+}
+
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu {
+  padding: 20px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.menu p {
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 5px;
+  font-family: Montserrat-regular;
+}
+
+.tabs-section {
+  margin: auto;
+  text-align: center;
+}
+
+.tabs-section {
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap; 
+}
+
+.tab {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #0e0e0eb9;
+  font-family: Montserrat-regular;
+  transition: background-color 0.3s ease;
+  border-radius: 40px!important;
+}
+
+.tab:hover {
+  background-color: #303030;
+}
+
+.tab.active {
+  background-color: #4CAF50;
+  color: #fff;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease; /* Agrega una transición suave al desplazamiento */
+}
+
+
+@media screen and (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab {
+    width: 100%; 
+    margin-bottom: 5px; 
+  }
+}
+
+.tabs-contents {
+  border: 1px solid;
+  max-width: 1525px;
+  margin: 25px auto 0;
+}
+
+iframe, .tab-content a {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.tab-content a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px auto 20px;
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: #161616;
+}
+
+.tab-content a:hover {
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px auto 20px;
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: #4CAF50;
+}
+
+
+#photoContainer {
+  position: absolute;
+  display: none;
+  animation: bounce 0.5s ease-in-out, fadeOut 0.5s ease-in-out 1s forwards;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+
+
+#randomPhoto {
+  width: 50px;
+  height: 50px;
+}
+
+#showButton {
+  position: absolute;
+  top: 20%;
+  left: 11%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.disable {
+  cursor: not-allowed;
+  background-color: #d4d4d498;
+}
+
+.disable:hover {
+  background-color: #d4d4d498;
+}
